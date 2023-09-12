@@ -33,7 +33,7 @@ int main() {
     account2.withdraw(1500.0);
 
     // Test the destructor for both accounts.
-
-   
+    account1.~Account();
+    account2.~Account();
     return 0;
 }

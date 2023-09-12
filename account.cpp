@@ -26,52 +26,71 @@ public:
     // Initialize 'balance' to 0.
     // TODO: Implement the default constructor.
 
-    Account(){
-        balance = 0;
-    }
+    Account();
 
     // Parameterized constructor.
     // Initialize 'balance' with the provided 'initialBalance'.
     // TODO: Implement the parameterized constructor.
 
-    Account(double initialBalance){
-        balance = initialBalance;
-    }
+    Account(double initialBalance);
 
     // Getter function to return the current balance.
     // TODO: Implement the 'getBalance' function.
 
-    double getBalance(){
-        return balance;
-    }
+    double getBalance();
 
     // Setter function to set the balance to a new value.
     // TODO: Implement the 'setBalance' function.
 
-    void setBalance(double newBalance){
-        balance = newBalance;
-    }
+    void setBalance(double newBalance);
 
     // Function to deposit an amount into the account.
     // TODO: Implement the 'deposit' function.
 
-    void deposit(double amount){
-        balance += amount;
-    }
+    void deposit(double amount);
 
     // Function to withdraw an amount from the account.
     // TODO: Implement the 'withdraw' function.
 
-    void withdraw(double amount){
-        balance -= amount;
-    }
-
+    void withdraw(double amount);
     // Destructor.
     // Display a message indicating the account is being destroyed.
     // TODO: Implement the destructor.
-    ~Account(){
-        std::cerr << "The account balance is " << balance << std::endl;
-    }
+    ~Account();
 };
+
+Account:: Account(){
+     balance = 0;
+}
+
+Account:: Account(double initialBalance){
+    balance = initialBalance;
+}
+
+double Account:: getBalance(){
+    return balance;
+} 
+
+void Account:: setBalance(double newBalance){
+    balance = newBalance;
+}
+
+void Account:: deposit(double amount){
+    balance += amount;
+}
+
+void Account:: withdraw(double amount){
+    balance -= amount;
+}
+
+Account:: ~Account(){
+    std::cerr << "The account balance is " << balance << std::endl;
+}
+
+
+
+
+
+
 
 #endif // ACCOUNT_H

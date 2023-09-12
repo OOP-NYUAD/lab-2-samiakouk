@@ -85,7 +85,7 @@ void Account:: withdraw(double amount){
 }
 
 Account:: ~Account(){
-    std::cerr << "The account balance is " << balance << std::endl;
+    std::cerr << "The account balance with balance:  " << balance << " is being destroyed." << std::endl;
 }
 
 

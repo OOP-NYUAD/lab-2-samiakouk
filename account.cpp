@@ -81,7 +81,11 @@ void Account:: deposit(double amount){
 }
 
 void Account:: withdraw(double amount){
+    if(amount>balance){
+        std::cout<< "Insufficient funds!" << std::endl;
+    }else{
     balance -= amount;
+    }
 }
 
 Account:: ~Account(){

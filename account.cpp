@@ -15,7 +15,7 @@
 #include <iostream>
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
-
+#include "account.h"
 
 class Account {
 private:
